@@ -1,122 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+      <h1>Caso Sony Pictures Entertainment (2014)</h1>
 
-      <div className="ticks"></div>
+      <h2>Resumen</h2>
+      <p>
+        En noviembre de 2014 Sony Pictures sufrió un ciberataque que expuso
+        correos electrónicos, datos de empleados, contratos y películas inéditas.
+      </p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <h2>Marco Normativo</h2>
+      <ul>
+        <li>Ley 21.459 sobre Delitos Informáticos.</li>
+        <li>Ley 19.628 sobre Protección de Datos Personales.</li>
+        <li>Convenio de Budapest.</li>
+        <li>GDPR.</li>
+      </ul>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      <h2>Delitos Informáticos</h2>
+      <ul>
+        <li>Acceso ilícito.</li>
+        <li>Intercepción ilícita.</li>
+        <li>Ataque a la integridad de datos.</li>
+        <li>Ataque a sistemas informáticos.</li>
+      </ul>
+
+      <h2>Responsabilidades</h2>
+      <p>
+        Existen responsabilidades para los atacantes y también deberes de
+        protección de información por parte de la empresa.
+      </p>
+
+      <h2>Protección de Datos</h2>
+      <p>
+        Se vieron comprometidos datos personales, correos electrónicos,
+        contratos e información laboral de trabajadores.
+      </p>
+
+      <h2>Conclusión</h2>
+      <p>
+        El caso demuestra la importancia de la ciberseguridad y la protección
+        de datos en organizaciones de gran tamaño.
+      </p>
+    </div>
+  );
 }
 
-export default App
+export default App;
